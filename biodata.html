@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <style>
+        .b-cont {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .biodata {
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+            padding: 30px;
+        }
+
+        .profile {
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid;
+            border-radius: 50%;
+            transition: 5s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+        }
+
+        .profile:hover {
+            box-shadow: 0px 0px 1000px rgba(0, 0, 0, 1);
+        }
+
+        .profile img {
+            width: 100%;
+        }
+
+        .deskripsi {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-around;
+        }
+
+        .name {
+            font-size: 25px;
+        }
+
+        .job {
+            font-size: 20px;
+        }
+
+        .age {
+            font-size: 15px;
+        }
+
+        @media (max-width: 500px) {
+            .biodata {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .deskripsi {
+                margin-top: 20px;
+                align-items: center;
+            }
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+            width: 98%;
+            max-width: 800px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            height: auto;
+            max-height: 45px;
+            transform: scaleY(1);
+            transform-origin: top;
+            transition: transform 1s ease-in-out, max-height 1s ease-in-out;
+            border-radius: 15px;
+        }
+
+        .card:hover {
+            max-height: 1000px;
+            transform: scaleY(1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background: rgb(241, 241, 241);
+            border-radius: 15px;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content li {
+            text-wrap: wrap;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="b-cont">
+        <div class="biodata">
+            <div class="profile">
+                <img src="image/profile.jpg" alt="Profile Image">
+            </div>
+            <div class="deskripsi">
+                <div class="name">Andika Rafa Syahputra</div>
+                <div class="job">Web Design</div>
+                <div class="age">18<sup>th</sup></div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="card">
+                <div class="card-header">
+                    <div class="t-card">Personal Info</div>
+                    <i class="bi bi-chevron-down"></i>
+                </div>
+                <div class="card-content">
+                    <ul style="list-style: none;">
+                        <li>Name : Andika Rafa</li>
+                        <li>Born : Cilacap, 28 July 2006</li>
+                        <li>Address : Villa Gading Harapan Block Ad 4 No. 32a</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="t-card">More Info</div>
+                    <i class="bi bi-chevron-down"></i>
+                </div>
+                <div class="card-content">
+                    <ul style="list-style: none;">
+                        <li>Hobby : Badminton and Work Out</li>
+                        <li>Favorite Food : Onde - onde</li>
+                        <li>Address : </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
