@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<style>
+    #container {
+        flex-direction: row;
+    }
+
+    #skill {
+        display: flex;
+        justify-content: end;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    li,td:last-child,td:first-child {
+        text-wrap: wrap;
+        gap: 10px;
+    }
+
+    @media screen and (max-width: 800px) {
+        #container {
+            flex-direction: column;
+        }
+
+        #skill {
+            justify-content: center;
+        }
+    }
+</style>
+
+<body>
+    <div id="container" class="container-fluid d-flex justify-content-between align-items-center"
+        style="margin-top: 60px;">
+        <div id="profile" class="d-flex justify-content-center align-items-start mb-4"
+            style="width: 200px;height: 180px; overflow: hidden;border-radius: 50%;">
+            <img src="image/pic.png" alt="" style="width: 100%;">
+        </div>
+        <div id="skill">
+            <div class="btn btn-outline-secondary">Database Manager</div>
+            <div class="btn btn-outline-secondary">Web Design</div>
+            <div class="btn btn-outline-secondary">Logo Design</div>
+            <div class="btn btn-outline-secondary">Excel</div>
+        </div>
+    </div>
+    <div id="biodata" class="card container-fluid mt-3">
+        <h5 class="card-header" style="background: none;">Biodata</h5>
+        <div class="card-body">
+            <table style="width: 100%;">
+                <tr>
+                    <td style="width: 8%;"><i class="bi bi-person-fill"></i></td>
+                    <td style="width: 30%;"> Nama</td>
+                    <td style="width: 10%;text-align: center;">:</td>
+                    <td style="width: 52%;">Andika Rafa Syahputra</td>
+                </tr>
+                <tr>
+                    <td style="width: 8%;"><i class="bi bi-calendar-week"></i></td>
+                    <td style="width: 30%;"> Kelahiran</td>
+                    <td style="width: 10%;text-align: center;">:</td>
+                    <td style="width: 52%;">Cilacap, 28 July 2006</td>
+                </tr>
+                <tr>
+                    <td style="width: 8%;"><i class="bi bi-brightness-high"></i></td>
+                    <td style="width: 30%;"> Agama</td>
+                    <td style="width: 10%;text-align: center;">:</td>
+                    <td style="width: 52%;">Islam</td>
+                </tr>
+                <tr>
+                    <td style="width: 8%;"><i class="bi bi-house"></i></td>
+                    <td style="width: 30%;"> Alamat</td>
+                    <td style="width: 10%;text-align: center;">:</td>
+                    <td style="width: 52%;">VGH Blok Ad 4 No.32a</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <div id="biograph" class="card container-fluid mt-3 mb-5">
+        <h5 class="card-header" style="background: none;">Pendidikan</h5>
+        <div class="card-body">
+            <ul style="list-style: decimal;">
+                <li>SDN Babelan Kota 06</li>
+                <li>SMPN 1 Babelan</li>
+                <li>SMK Taruna Bangsa (Rekayasa Perangkat Lunak)</li>
+                <li>Universitas Bhayangkara (Tehnik Industri)</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
