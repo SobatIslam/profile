@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galery</title>
+</head>
+<style>
+    #container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        columns: 3;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        max-width: 15rem;
+        border-radius: 15px;
+        overflow: hidden;
+        transition: all 0.2s ease-in;
+    }
+
+    .image:hover{
+        transform: scale(1.05);
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .image img {
+        width: 100%;
+    }
+
+    @media screen and (max-width:800px) {
+        #container{
+            columns: 2;
+        }
+    }
+</style>
+
+<body>
+    <div id="container" class="container-fluid"
+        style="margin-top: 60px;margin-bottom: 60px;">
+        <div class="image">
+            <img src="image/pic7.jpg">
+        </div>
+        <div class="image">
+            <img src="image/pic6.jpg">
+        </div>
+        <div class="image">
+            <img src="image/pic3.jpg">
+        </div>
+        <div class="image">
+            <img src="image/pic4.jpg">
+        </div>
+        <div class="image">
+            <img src="image/pic5.jpg">
+        </div>
+        <div class="image">
+            <img src="image/pic1.jpg">
+        </div>
+    </div>
+</body>
+
+</html>
